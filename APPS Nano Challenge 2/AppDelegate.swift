@@ -7,14 +7,29 @@
 //
 
 import UIKit
+import HealthKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
+    var healthStore: HKHealthStore?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        //  add this to make sure HealthKit is available
+        if HKHealthStore.isHealthDataAvailable() {
+            // add code to use HealthKit here...
+            
+            //  set root view controller's healthStore reference to app delegate's healthStore Instance
+            if let vc = self.window?.rootViewController as? ViewController
+            {
+                vc.healthStore = self.healthStore
+            } else {
+                NSLog("unable to get rootViewControler")
+            }
+        }
+
         // Override point for customization after application launch.
         return true
     }
