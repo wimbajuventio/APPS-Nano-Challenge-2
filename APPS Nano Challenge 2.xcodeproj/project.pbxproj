@@ -13,6 +13,9 @@
 		15755DBD233229970035B0B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15755DBC233229970035B0B8 /* Assets.xcassets */; };
 		15755DC0233229970035B0B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15755DBE233229970035B0B8 /* LaunchScreen.storyboard */; };
 		15755DCA233229E80035B0B8 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15755DC9233229E80035B0B8 /* HealthKit.framework */; };
+		15755DCC233381510035B0B8 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15755DCB233381510035B0B8 /* TableViewCell.swift */; };
+		15755DCE233381910035B0B8 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15755DCD233381910035B0B8 /* History.swift */; };
+		15755DD0233384A70035B0B8 /* ObjectData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15755DCF233384A70035B0B8 /* ObjectData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +28,9 @@
 		15755DC1233229970035B0B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15755DC7233229E80035B0B8 /* APPS Nano Challenge 2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "APPS Nano Challenge 2.entitlements"; sourceTree = "<group>"; };
 		15755DC9233229E80035B0B8 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		15755DCB233381510035B0B8 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		15755DCD233381910035B0B8 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		15755DCF233384A70035B0B8 /* ObjectData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,9 @@
 				15755DB5233229960035B0B8 /* AppDelegate.swift */,
 				15755DB7233229960035B0B8 /* ViewController.swift */,
 				15755DB9233229960035B0B8 /* Main.storyboard */,
+				15755DCF233384A70035B0B8 /* ObjectData.swift */,
+				15755DCD233381910035B0B8 /* History.swift */,
+				15755DCB233381510035B0B8 /* TableViewCell.swift */,
 				15755DBC233229970035B0B8 /* Assets.xcassets */,
 				15755DBE233229970035B0B8 /* LaunchScreen.storyboard */,
 				15755DC1233229970035B0B8 /* Info.plist */,
@@ -154,7 +163,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15755DCC233381510035B0B8 /* TableViewCell.swift in Sources */,
+				15755DD0233384A70035B0B8 /* ObjectData.swift in Sources */,
 				15755DB8233229960035B0B8 /* ViewController.swift in Sources */,
+				15755DCE233381910035B0B8 /* History.swift in Sources */,
 				15755DB6233229960035B0B8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
