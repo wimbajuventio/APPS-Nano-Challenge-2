@@ -48,12 +48,23 @@ class ViewController: UIViewController
                     }
             }
         }
-          getBIMIHealthData()
+          //getBIMIHealthData()
+        readWater()
         
     }
     
     
-    
+    func readWater(){
+        let Water = HKSampleType.quantityType(forIdentifier: HKQuantityTypeIdentifier.dietaryWater)!
+        let query = HKSampleQuery(sampleType: Water, predicate: nil, limit: 1, sortDescriptors: nil) { (query, results, error) in
+            if let result = results?.first as? HKQuantitySample{
+                print("Water volume => \(result.quantity.doubleValue(for: .literUnit(with: .milli)))")
+            }else{
+                print("OOPS didnt get height \nResults => \(results), error => \(error)")
+            }
+        }
+        self.healthStore!.execute(query)
+    }
 
     
     
